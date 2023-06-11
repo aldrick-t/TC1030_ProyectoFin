@@ -1,0 +1,7 @@
+"One Punch Man", "Action", 4, 2015, 4, 12
+"86\t\t", "Action", 5, 2021, 23, 11
+"Shigatsu wa Kimi no Uso", "Drama", 2014, 46, 4
+"Clannad: After Story", "Drama", 2008, 46, 4
+"Ano Hi Mita Hana no Namae wo Bokutachi wa Mada Shiranai.", "Drama", 2011, 46, 4
+"Hotarubi no Mori e", "Drama", 2011, 46, 4
+"Violet Evergarden", "Drama", 2018, 46, 4
