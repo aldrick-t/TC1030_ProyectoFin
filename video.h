@@ -6,7 +6,6 @@ using namespace std;
 
 class Video {
 protected:
-	int id;
 	string type;
 	string name;
 	string genre;
@@ -16,6 +15,8 @@ protected:
 public:
 	Video(string name, string genre, float rating, int releaseYear);
 	Video(string name, string genre, int releaseYear);
+	Video(string name, int releaseYear);
+	Video(string name, float rating);
 
 	string getType();
 	string getName();

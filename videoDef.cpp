@@ -9,12 +9,19 @@ Video::Video(string name, string genre, float rating, int releaseYear) {
 	this->rating = rating;
 	this->releaseYear = releaseYear;
 };
-
 Video::Video(string name, string genre, int releaseYear) {
 	this->name = name;
 	this->genre = genre;
 	this->rating = 0;
 	this->releaseYear = releaseYear;
+};
+Video::Video(string name, int releaseYear) {
+	this->name = name;
+	this->releaseYear = releaseYear;
+};
+Video::Video(string name, float rating) {
+	this->name = name;
+	this->rating = rating;
 };
 
 string Video::getType() { return type; }

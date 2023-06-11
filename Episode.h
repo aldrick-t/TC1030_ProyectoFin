@@ -12,21 +12,26 @@ class Episode : public Video {
 private:
 	int episodeNumber;
 	int seasonNumber;
+	string parentSeries;
 public:
-	Episode(string name, float rating, int duration, int episodeNumber, int seasonNumber) : Video(name, genre, (float)rating) {
+	Episode(string name, string parentSeries, float rating, int duration, int episodeNumber, int seasonNumber) : Video(name, rating) {
+		this->parentSeries = parentSeries;
 		this->type = "Episode";
 		this->episodeNumber = episodeNumber;
 		this->seasonNumber = seasonNumber;
 		this->duration = duration;
 	}
-	Episode(string name, int releaseYear, int episodeNumber, int seasonNumber) : Video(name, genre, releaseYear) {
+	Episode(string name, string parentSeries, int releaseYear, int duration, int episodeNumber, int seasonNumber) : Video(name, releaseYear) {
+		this->parentSeries = parentSeries;
 		this->type = "Episode";
 		this->episodeNumber = episodeNumber;
 		this->seasonNumber = seasonNumber;
 		this->duration = duration;
 	}
+	string getParentSeries() { return parentSeries; }
 	int getEpisodeNumber() { return episodeNumber; }
 	int getSeasonNumber() { return seasonNumber; }
+	int getDuration() { return duration; }
 	void showInfo() {
 		Video::showInfo();
 		cout << "Duration:\t" << duration << endl;
